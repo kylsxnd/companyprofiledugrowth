@@ -11,10 +11,11 @@
         body { font-family: 'Poppins', sans-serif; overflow-x: hidden; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 leading-relaxed">
+<!-- Background Gambar Full Layar (Fixed) -->
+<body class="bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2069&q=80')] bg-fixed bg-cover bg-center text-gray-800 leading-relaxed">
 
-    <!-- Header -->
-    <header class="bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300">
+    <!-- Header (Glassmorphism) -->
+    <header class="bg-white/90 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 transition-all duration-300 border-b border-white/50">
         <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center z-50">
                 <img src="logo/logo2.jpeg" alt="Logo EduGrowth" class="h-12 md:h-16 w-auto object-contain">
@@ -22,9 +23,10 @@
             
             <!-- Desktop Navigasi -->
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="index.html#tentang" class="text-gray-600 hover:text-[#1b8e44] font-medium transition duration-300">Tentang Kami</a>
-                <a href="index.html#layanan" class="text-gray-600 hover:text-[#1b8e44] font-medium transition duration-300">Layanan</a>
-                <a href="index.html#kontak" class="text-gray-600 hover:text-[#1b8e44] font-medium transition duration-300">Kontak</a>
+                <a href="index.html#tentang" class="text-gray-700 hover:text-[#1b8e44] font-medium transition duration-300">Tentang Kami</a>
+                <a href="index.html#layanan" class="text-gray-700 hover:text-[#1b8e44] font-medium transition duration-300">Layanan</a>
+                <a href="index.html#usp" class="text-gray-700 hover:text-[#1b8e44] font-medium transition duration-300">USP</a>
+                <a href="index.html#kontak" class="text-gray-700 hover:text-[#1b8e44] font-medium transition duration-300">Kontak</a>
                 <a href="produk.html" class="bg-[#1b8e44] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#157235] transition duration-300 shadow-md">Produk</a>
             </nav>
 
@@ -38,140 +40,61 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-0 left-0 w-full shadow-xl pt-20 pb-6 px-6 flex flex-col space-y-4 border-t border-gray-100">
             <a href="index.html#tentang" class="text-gray-800 hover:text-[#1b8e44] font-medium text-lg border-b border-gray-50 pb-2">Tentang Kami</a>
             <a href="index.html#layanan" class="text-gray-800 hover:text-[#1b8e44] font-medium text-lg border-b border-gray-50 pb-2">Layanan</a>
+            <a href="index.html#usp" class="text-gray-800 hover:text-[#1b8e44] font-medium text-lg border-b border-gray-50 pb-2">USP</a>
             <a href="index.html#kontak" class="text-gray-800 hover:text-[#1b8e44] font-medium text-lg border-b border-gray-50 pb-2">Kontak</a>
             <a href="produk.html" class="bg-[#1b8e44] text-white px-6 py-3 rounded-xl font-semibold text-center hover:bg-[#157235] transition duration-300 shadow-md mt-4">Lihat Produk</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-[#053d6c] to-[#032847] pt-32 md:pt-40 pb-16 md:pb-20 text-center relative shadow-inner overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <section class="bg-gradient-to-br from-[#053d6c]/90 to-[#032847]/90 backdrop-blur-sm pt-32 md:pt-40 pb-16 md:pb-20 text-center relative shadow-inner overflow-hidden border-b border-white/20">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div class="container mx-auto px-4 md:px-6 relative z-10">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight">Katalog Layanan & Produk</h1>
-            <p class="text-base md:text-lg max-w-2xl mx-auto text-blue-100 px-2">Solusi kreatif dan promosi digital yang dirancang khusus untuk meningkatkan kredibilitas lembaga pendidikan nonformal.</p>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight drop-shadow-lg">Katalog Layanan & Produk</h1>
+            <p class="text-base md:text-lg max-w-2xl mx-auto text-blue-100 px-2 drop-shadow-md">Solusi kreatif dan promosi digital yang dirancang khusus untuk meningkatkan kredibilitas lembaga pendidikan nonformal.</p>
         </div>
     </section>
 
-    <!-- Daftar Layanan -->
-    <section class="py-16 md:py-20 bg-gray-100">
-        <div class="container mx-auto px-4 md:px-6 max-w-6xl">
-            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#053d6c] mb-10 md:mb-12">Layanan Utama</h2>
+    <!-- Daftar Layanan (Glassmorphism) -->
+    <section class="py-16 md:py-20 bg-gray-50/85 backdrop-blur-md">
+        <div class="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#053d6c] mb-10 md:mb-12 drop-shadow-sm">Layanan Utama</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 
-                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] text-center hover:transform hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4">
+                <div class="bg-white/95 p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] border-x border-b border-white text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4 shadow-sm">
                         <i class="fa-solid fa-video"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-[#053d6c] mb-2 md:mb-3">Video Company Profile</h3>
-                    <p class="text-gray-600 text-xs md:text-sm">Produksi video profil profesional dan komunikatif.</p>
+                    <p class="text-gray-700 text-xs md:text-sm">Produksi video profil profesional dan komunikatif.</p>
                 </div>
                 
-                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] text-center hover:transform hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4">
+                <div class="bg-white/95 p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] border-x border-b border-white text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4 shadow-sm">
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-[#053d6c] mb-2 md:mb-3">Website</h3>
-                    <p class="text-gray-600 text-xs md:text-sm">Pengembangan website resmi yang responsif dan informatif.</p>
+                    <p class="text-gray-700 text-xs md:text-sm">Pengembangan website resmi yang responsif dan informatif.</p>
                 </div>
                 
-                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] text-center hover:transform hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4">
+                <div class="bg-white/95 p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] border-x border-b border-white text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4 shadow-sm">
                         <i class="fa-solid fa-pen-nib"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-[#053d6c] mb-2 md:mb-3">Konten</h3>
-                    <p class="text-gray-600 text-xs md:text-sm">Manajemen sosial media dan pembuatan materi grafis.</p>
+                    <p class="text-gray-700 text-xs md:text-sm">Manajemen sosial media dan pembuatan materi grafis.</p>
                 </div>
                 
-                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] text-center hover:transform hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4">
+                <div class="bg-white/95 p-6 md:p-8 rounded-2xl shadow-lg border-t-4 border-[#1b8e44] border-x border-b border-white text-center hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 md:w-16 md:h-16 bg-[#e8f4ec] rounded-full flex items-center justify-center text-[#1b8e44] text-xl md:text-2xl mx-auto mb-4 shadow-sm">
                         <i class="fa-solid fa-scroll"></i>
                     </div>
                     <h3 class="text-lg md:text-xl font-bold text-[#053d6c] mb-2 md:mb-3">Brosur</h3>
-                    <p class="text-gray-600 text-xs md:text-sm">Desain media cetak dan digital untuk promosi program.</p>
+                    <p class="text-gray-700 text-xs md:text-sm">Desain media cetak dan digital untuk promosi program.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Galeri Portofolio -->
-    <section class="py-16 md:py-20 bg-white">
-        <div class="container mx-auto px-4 md:px-6 max-w-6xl">
-            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#053d6c] mb-12 md:mb-16">Galeri Portofolio</h2>
-            
-            <div class="space-y-12 md:space-y-16">
-                
-                <div>
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#053d6c] mb-4 md:mb-6 border-b border-gray-200 pb-2"><i class="fa-solid fa-video text-[#1b8e44] mr-2 md:mr-3"></i>Video Company Profile</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                        <div class="bg-gray-100 h-48 md:h-64 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 shadow-inner cursor-pointer hover:bg-gray-200 hover:text-[#053d6c] transition duration-300">
-                            <span class="flex flex-col items-center"><i class="fa-solid fa-play text-3xl md:text-4xl mb-2 text-[#1b8e44]"></i> <span class="text-sm md:text-base">Putar Video Profil</span></span>
-                        </div>
-                        <div class="bg-gray-100 h-48 md:h-64 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 shadow-inner cursor-pointer hover:bg-gray-200 hover:text-[#053d6c] transition duration-300">
-                            <span class="flex flex-col items-center"><i class="fa-solid fa-play text-3xl md:text-4xl mb-2 text-[#1b8e44]"></i> <span class="text-sm md:text-base">Putar Video Promosi</span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#053d6c] mb-4 md:mb-6 border-b border-gray-200 pb-2"><i class="fa-solid fa-laptop text-[#1b8e44] mr-2 md:mr-3"></i>Desain Website</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                        <div class="bg-gray-100 h-40 md:h-48 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer shadow-sm hover:shadow-md">
-                            <span class="text-sm md:text-base px-4 text-center">Tampilan Website Beranda</span>
-                        </div>
-                        <div class="bg-gray-100 h-40 md:h-48 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer shadow-sm hover:shadow-md">
-                            <span class="text-sm md:text-base px-4 text-center">Tampilan Website Layanan</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#053d6c] mb-4 md:mb-6 border-b border-gray-200 pb-2"><i class="fa-solid fa-images text-[#1b8e44] mr-2 md:mr-3"></i>Konten Media Sosial</h3>
-                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-                        <div class="bg-gray-100 h-40 md:h-56 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer text-center px-2 md:px-4 shadow-sm hover:shadow-md">
-                            <span class="text-xs md:text-sm">Unggahan Edukasi</span>
-                        </div>
-                        <div class="bg-gray-100 h-40 md:h-56 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer text-center px-2 md:px-4 shadow-sm hover:shadow-md">
-                            <span class="text-xs md:text-sm">Unggahan Promosi</span>
-                        </div>
-                        <div class="bg-gray-100 h-40 md:h-56 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer text-center px-2 md:px-4 shadow-sm hover:shadow-md">
-                            <span class="text-xs md:text-sm">Unggahan Testimoni</span>
-                        </div>
-                        <div class="bg-gray-100 h-40 md:h-56 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer text-center px-2 md:px-4 shadow-sm hover:shadow-md">
-                            <span class="text-xs md:text-sm">Unggahan Info Program</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-xl md:text-2xl font-semibold text-[#053d6c] mb-4 md:mb-6 border-b border-gray-200 pb-2"><i class="fa-solid fa-file-pdf text-[#1b8e44] mr-2 md:mr-3"></i>Desain Brosur</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                        <div class="bg-gray-100 h-56 md:h-72 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer shadow-sm hover:shadow-md">
-                            <span class="text-sm md:text-base">Tampilan Brosur Depan</span>
-                        </div>
-                        <div class="bg-gray-100 h-56 md:h-72 rounded-xl flex items-center justify-center text-gray-400 border border-gray-200 hover:border-[#1b8e44] transition duration-300 cursor-pointer shadow-sm hover:shadow-md">
-                            <span class="text-sm md:text-base">Tampilan Brosur Dalam</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#031d33] text-gray-400 py-8 md:py-10">
-        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div class="mb-4 md:mb-0">
-                <p class="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">EduGrowth Creative</p>
-                <p class="text-sm md:text-base">&copy; 2026 Hak cipta dilindungi undang-undang.</p>
-            </div>
-            <div class="flex space-x-4">
-                <a href="https://www.instagram.com/edugrowth.creative?utm_source=qr&igsh=Y2xvMzY1ZDUxOGI5" target="_blank" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#053d6c] flex items-center justify-center hover:bg-[#1b8e44] hover:text-white transition duration-300 text-base md:text-lg" title="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
 
     <!-- Script Menu Mobile -->
     <script>
